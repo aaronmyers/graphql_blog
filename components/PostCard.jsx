@@ -3,14 +3,14 @@ import Image from 'next/image';
 import moment from 'moment';
 import Link from 'next/link';
 
-import { grpahCMSImageLoader } from '../util';
+import { graphCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
   <div className="bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
     {/* <div className="relative shadow-md inline-block w-full h-60 lg:h-80 mb-6">
       <Image
         unoptimized
-        loader={grpahCMSImageLoader}
+        loader={graphCMSImageLoader}
         alt={post.title}
         className="shadow-lg rounded-t-lg lg:rounded-lg"
         layout="fill"
@@ -28,7 +28,7 @@ const PostCard = ({ post }) => (
       <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 items-center">
         <Image
           unoptimized
-          loader={grpahCMSImageLoader}
+          loader={graphCMSImageLoader}
           alt={post.author.name}
           height="30px"
           width="30px"
